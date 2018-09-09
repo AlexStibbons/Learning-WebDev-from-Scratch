@@ -13,5 +13,7 @@ class ls1ex5 {
 	double finalp = pricePerItem * numberOfItems * discount;
 	System.out.prinln("The final price is " + finalp);
 
+	// NOT really correct, needs fixing later
+
 	}
 }
