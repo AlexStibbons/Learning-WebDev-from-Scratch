@@ -1,2 +1,2 @@
-# Week 1: TITLE
+# Week 1: It's Called a Language for a Reason
 ## Subtitle
