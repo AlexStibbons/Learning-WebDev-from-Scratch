@@ -11,17 +11,17 @@ public class Ls03Ex01 {
 
 	
 		if (n%50 == 0) {
-					while (n > 0) {
-						for (int i = 0; i < 4; i++) {
-							int th = n / opt[i];
-									if (th > 0) {
-										System.out.println("You get " + th + " " 
-														+ opt[i] + " bills.");
-										n = n - th * opt[i];
-										System.out.println("What's left to pay out is " + n);
-									} 
-						}
+			while (n > 0) {
+				for (int i = 0; i < 4; i++) {
+					int th = n / opt[i];
+						if (th > 0) {
+							System.out.println("You get " + th + " " 
+							+ opt[i] + " bills.");
+							n = n - th * opt[i];
+							System.out.println("What's left to pay out is " + n);
+						} 
 					}
+				}
 	
 		} else {
 			System.out.println("not divisable by 50, try again");
