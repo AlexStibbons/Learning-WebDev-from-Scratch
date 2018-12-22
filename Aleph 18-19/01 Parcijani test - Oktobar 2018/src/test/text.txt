@@ -1,0 +1,3 @@
+40.0 procenata neprikladnosti. Teskt poruke: 2 poruka 1 neprikladno tamo
+12.0 procenata neprikladnosti. Teskt poruke: 3 poruka 1 tekst poruke tamo korisnika 3
+25.0 procenata neprikladnosti. Teskt poruke: 3 tamo poruka 3 komentar neprikladno korisnik 3
