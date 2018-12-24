@@ -1,0 +1,34 @@
+body {
+	background-color: black;
+	font-family: "Arial";
+}
+
+.bkg {
+	background-color: lightgray;
+	text-align: left;
+	border-radius: 15px;
+	height: 100%;
+	margin: 3%;
+	padding-left: 5%;	
+	padding-right: 5%;
+	padding-bottom: 5%;
+	padding-top: 1px;
+}
+
+.buttons > button {
+	color: white;
+	background-color: blue;
+	margin: 3px;
+	border-radius: 3px;
+}
+
+.buttons {
+	background-color: darkblue;
+	width: inherit;
+
+}
+
+.heading {
+	font-size: 1.5em;
+	font-weight: bold;
+}
