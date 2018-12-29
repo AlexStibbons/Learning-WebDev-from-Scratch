@@ -41,9 +41,10 @@ imenik = [
 function klikni() {
 
 	var looking = document.getElementById('input1').value;
-
+	var lowerlooking = looking.toLowerCase();
 	for (var i = 0; i < imenik.length; i++) {
-		if (imenik[i].ime.includes(looking)) {
+		var lower = imenik[i].ime.toLowerCase();
+		if (lower.includes(lowerlooking)) {
 			var j = document.getElementById('listanje');
 			j.innerHTML += 	'<div class=\"person\">' +
 				'<p> <span class=\"namecss\">' + imenik[i].ime + ' ' +
