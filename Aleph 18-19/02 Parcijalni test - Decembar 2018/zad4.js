@@ -40,6 +40,9 @@ imenik = [
 // pretraga po delu imena
 function klikni() {
 
+	var a = document.getElementById('listanje');
+	a.innerHTML = ' ';
+
 	var looking = document.getElementById('input1').value;
 	var lowerlooking = looking.toLowerCase();
 	for (var i = 0; i < imenik.length; i++) {
