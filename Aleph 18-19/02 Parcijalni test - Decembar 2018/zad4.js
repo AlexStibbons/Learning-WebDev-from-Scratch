@@ -45,6 +45,7 @@ function klikni() {
 
 	var looking = document.getElementById('input1').value;
 	var lowerlooking = looking.toLowerCase();
+
 	for (var i = 0; i < imenik.length; i++) {
 		var lower = imenik[i].ime.toLowerCase();
 		if (lower.includes(lowerlooking)) {
@@ -56,7 +57,8 @@ function klikni() {
 				'</span><br>' + '<span class=\"connected\">' + imenik[i].konekcija +
 				'</span></p>' + '<button>' + 'Send message' + '</button></div>';
 		}
-	}
+	} 
+	
 
 }
 
