@@ -1,0 +1,76 @@
+
+body {
+
+	background-color: rgb(234, 236, 239);
+}
+
+.margina {
+	margin-left: 5%;
+}
+
+.header {
+
+	color: white;
+	background-color: rgb(39, 61, 73);
+	padding-bottom: 2%;
+	padding-top: 3px;
+	margin-bottom: 3%;
+	width: 100%;
+	text-align: left;
+}
+
+.header p {
+	float: left;
+	margin: 5px;
+	padding: 3px;
+}
+
+.contact {
+	color: orange;
+}
+
+.input input {
+	width: 60%;
+	margin-left: 15%;
+}
+
+.input button {
+	color: rgb(173. 181, 185);
+	background-color: white;
+
+}
+
+.person {
+	border: 1px solid rgb(39, 61, 73);
+	width: 20%;
+	float: left;
+	margin-top: 30px;
+	margin-left: 5px;
+	margin-right: 5px;
+	text-align: center;
+	padding: 1%;
+	background-color: white;
+}
+
+.namecss {
+	font-weight: bold;
+	font-size: 14pt;
+	color: rgb(39, 61, 73);
+}
+
+.title {
+	font-size: 12pt;
+	color: rgb(153, 157, 163);
+}
+
+.connected {
+		font-size: 10pt;
+		color: rgb(153, 157, 163);
+}
+
+.person button {
+	background-color: rgb(39, 61, 73);
+	color: white;
+	padding: 3%;
+	border-radius: 5px;
+}

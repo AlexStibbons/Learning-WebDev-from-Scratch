@@ -1,0 +1,47 @@
+.heading {
+	text-align: center;
+	color: blue;
+	background-color: orange;
+	border: 2px solid green;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	width: 100%;
+}
+
+body {
+	background-color: grey;
+	text-align: center;
+}
+
+.main {
+	width: 60%;
+	display: inline-block;
+	background-color: lightblue;
+	padding: 3%;
+	
+}
+
+.main p {
+	text-align: left;
+}
+
+.tables {
+	font-weight: bold;
+	font-size: 1.5em;
+	color: blue;
+}
+
+.main table {
+	border-collapse: collapse;
+	border: 3px solid red;
+	text-align: left;
+	width: 100%;
+}
+
+.main table tr:nth-child(even) {
+	background-color: green;
+}
+
+.main table tr:nth-child(odd) {
+	background-color: orange;
+}
