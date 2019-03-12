@@ -86,8 +86,9 @@ public class BusController {
 	@RequestMapping(value = "api/buses/change/{id}", method = RequestMethod.PUT, consumes = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<Bus> update(@PathVariable int id,
 			@RequestBody Bus bus) {
-		bus.setId(id); // ?
-		// servis ce pronaci drzavu sa tim id-om i izvrsiti promenu podataka
+		
+		bus.setId(id); 
+
 		Bus retVal = busService.saveBus(bus);
 
 		return new ResponseEntity<>(retVal, HttpStatus.OK);
