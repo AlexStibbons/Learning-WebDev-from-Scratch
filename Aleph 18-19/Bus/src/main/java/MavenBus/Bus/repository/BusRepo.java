@@ -61,8 +61,17 @@ public class BusRepo {
 	}
 	
 	public Bus saveBus(Bus bus) {
-
-		for (Bus existingBus : buses) {
+		
+		Bus existingBus = findById(bus.getId());
+		
+		if (existingBus == null) {
+			bus.setId(buses.get(buses.size()-1).getId()+1); // get id from last in line (buses.get(3).getId, for ex), then add 1 to that id
+			buses.add(bus);
+		} else {
+			existingBus.setLine(bus.getLine());
+			existingBus.setDestination(bus.getDestination());			
+		}
+		/*for (Bus existingBus : buses) {
 			if (bus.getId() == existingBus.getId()) {
 				existingBus.setLine(bus.getLine());
 				existingBus.setDestination(bus.getDestination());
@@ -70,7 +79,7 @@ public class BusRepo {
 				bus.setId(buses.get(buses.size()-1).getId()+1); // get id from last in line (buses.get(3).getId, for ex), then add 1 to that id
 				buses.add(bus);
 			}
-		}
+		}*/
 		return bus;
 	}
 	
