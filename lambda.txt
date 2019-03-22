@@ -1,0 +1,31 @@
+	private List<CountryDTO> convertCountriesToDTOs(List<Country> countries) {
+		List<CountryDTO> retVal = new ArrayList<>();
+	
+		return countries.stream()
+				.map(this::createDTO) //country -> createDTO(country)
+				.collect(Collectors.toList());
+				
+		/*
+		for (Country country: countries) {
+			CountryDTO countryDTO = new CountryDTO(country); 
+			// popunjavanje i kolekcije gradova u DTO objektu
+			for (Place city: country.getPlaces()) {
+				countryDTO.getPlaces().add(new PlaceDTO(city));
+			}
+			retVal.add(countryDTO);
+		}*/
+		//return retVal;
+	}
+	
+	private CountryDTO createDTO(Country country) {
+		
+		CountryDTO dto = new CountryDTO(country);
+		
+		List<PlaceDTO> places =	country.getPlaces().stream()
+			.map(PlaceDTO::new) //place -> new PlaceDTO(place)
+			.collect(Collectors.toList());
+	
+		dto.setPlaces(places);
+	
+		return dto;
+	}
