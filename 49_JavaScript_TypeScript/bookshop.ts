@@ -5,27 +5,38 @@ interface Article {
 
 }
 
-class Author {
+interface Creators {
+
+    id: number
+}
+
+class Author implements Creators {
     constructor(
         public id: number,
         public firstName: string,
-        public lastName: string,
+        public lastName: string
     ) {
 
     }
 }
 
-class Performer {
-
+class Performer implements Creators {
     constructor(
-
+        public id: number,
+        public bandName: string
     ){
 
     }
-
 }
 
 class Publisher {
+
+    constructor(
+        public id: number,
+        public name: string
+    ) {
+
+    }
 
 }
 
@@ -34,12 +45,19 @@ class Genre {
         public id: number,
         public genre: string
     ){
-        
+
     }
 
 }
 
 class Style {
+
+    constructor(
+        public id: number,
+        public name: string
+    ) {
+
+    }
 
 }
 
@@ -81,6 +99,26 @@ class Supplies implements Article {
         public name: string
     ){
 
+    }
+
+}
+
+class App {
+    // create 'bookshop' with everything inside
+    public articles: Article[] = [];
+    public creators: Performer[] = [];
+    public authors: Author[] = [];
+    public publishers: Publisher[] = [];
+    public genres: Genre[] = [];
+    public styles: Style[] = [];
+
+    // create functions/methods for this bookshop
+    public addArticle(article: Article): void {
+        this.articles.push(article);
+    }
+
+    public removeArticle(id: number): void {
+       this.articles = this.articles.filter(article => article.id !== id);
     }
 
 }
